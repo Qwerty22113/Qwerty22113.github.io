@@ -11,11 +11,6 @@ const MAX_IMAGES = 5;
 let play = true;
 let noCount = 0;
 
-// Debugging: Check if elements are found
-console.log("Title element:", titleElement);
-console.log("Yes button:", yesButton);
-console.log("No button:", noButton);
-
 yesButton.addEventListener("click", handleYesClick);
 
 noButton.addEventListener("click", function () {
@@ -48,11 +43,11 @@ function resizeYesButton() {
 function generateMessage(noCount) {
   const messages = [
     "No",
-    "Are you sure?",
-    "Pookie please",
-    "Don't do this to me :(",
+    "Sure kanaba talaga diyan beh?",
+    "My Pookie hihi please",
+    "Don't do this to me :( uwu",
     "You're breaking my heart",
-    "I'm gonna cry...",
+    "I'm gonna cry... baka mag cry cry nalang",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
